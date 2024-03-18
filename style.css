@@ -138,7 +138,7 @@ body {
 }
 
 .section2__texto {
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 25px;
@@ -180,7 +180,7 @@ body {
 .section3__texto h1 {
   background-color: var(--cor-secundaria);
   color: var(--cor-quarternaria);
-  font-family: var(--fonte-primaria);
+  font-family: var(--fonte-secundaria);
   font-size: 2.813rem;
   width: fit-content;
   padding: 8px 0 8px 0;
@@ -237,12 +237,12 @@ body {
 
 @keyframes slide1 {
   0%,
-  21.33%,
+  21.333333%,
   100% {
     transform: translateX(0);
     animation-timing-function: ease;
   }
-  33.33% {
+  33.333333% {
     transform: translateX(-100%);
     animation-timing-function: step-end;
   }
@@ -836,6 +836,7 @@ body {
 
   .section1 {
     height: 100vh;
+    padding-right: 0;
   }
 
   .section1__button {
@@ -848,14 +849,27 @@ body {
     margin: 55% 10%;
   }
 
+  .section1 h1 {
+    font-size: 2.2rem;
+  }
+
   .section2 {
     flex-direction: column;
     gap: 50px;
-    padding: 15% 10% 15% 10%;
+    padding: 80px 10% 80px 10%;
   }
 
   .section2__texto {
     width: 100%;
+    padding-top: 0;
+  }
+
+  .section2__texto h1 {
+    font-size: 2.2rem;
+  }
+
+  .section2__texto p {
+    font-family: "Arial", sans-serif;
   }
 
   .section2__video {
@@ -865,7 +879,7 @@ body {
   .section3 {
     flex-direction: column-reverse;
     gap: 50px;
-    padding: 15% 10% 15% 10%;
+    padding: 80px 10% 80px 10%;
   }
 
   .section3__texto {
@@ -873,8 +887,13 @@ body {
   }
 
   .section3__texto h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    font-family: var(--fonte-primaria);
     margin: auto;
+  }
+
+  .section3__texto p {
+    font-family: "Arial", sans-serif;
   }
 
   .section3 img {
@@ -882,17 +901,18 @@ body {
   }
 
   .section4 {
-    height: 100vh;
+    height: 90vh;
   }
 
   .section4 h1 {
     left: 10%;
-    font-size: 2.5rem;
+    top: 70%;
+    font-size: 2.2rem;
   }
 
   .section5 {
     flex-direction: column;
-    padding: 15% 10% 15% 10%;
+    padding: 80px 10% 80px 10%;
   }
 
   .section5_texts {
@@ -900,6 +920,10 @@ body {
     flex-direction: column;
     gap: 15px;
     width: 100%;
+  }
+
+  .section5 h1 {
+    font-size: 2.2rem;
   }
 
   .section5 .slider {
@@ -910,21 +934,23 @@ body {
     width: 100vw;
     height: 100%;
     object-fit: cover;
-    object-position: -35px 0;
+    object-position: 50% 50%;
   }
 
   .section5 h1 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .section6 {
     width: 100%;
+    height: 90vh;
   }
 
   .section6__title {
     left: 10%;
-    font-size: 2.5rem;
+    top: 60%;
+    font-size: 2.2rem;
     overflow-wrap: break-word;
     margin: 0 25% 0 0;
     width: fit-content;
@@ -932,7 +958,7 @@ body {
 
   .section7 {
     flex-direction: column;
-    padding: 15% 10% 0% 10%;
+    padding: 80px 10% 0 10%;
     margin: auto;
   }
 
@@ -946,12 +972,12 @@ body {
   }
 
   .section7 div h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .section8 {
     flex-direction: column;
-    padding: 15% 10% 15% 10%;
+    padding: 15% 10% 80px 10%;
   }
 
   .section8__div1 {
@@ -960,7 +986,7 @@ body {
   }
 
   .section8__div1 h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .section8__div2 {
@@ -969,19 +995,19 @@ body {
   }
 
   .section8__div2 h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .section9 {
-    padding: 15% 10% 15% 10%;
+    padding: 80px 10% 80px 10%;
   }
 
   .section9 h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .section10 {
-    padding: 15% 10% 15% 10%;
+    padding: 80px 10% 80px 10%;
     flex-direction: column;
     gap: 50px;
   }
@@ -992,7 +1018,7 @@ body {
   }
 
   .section10 h1 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
 
   .section10 img {
@@ -1001,7 +1027,7 @@ body {
 
   .section11 {
     flex-direction: column-reverse;
-    padding: 15% 10% 15% 10%;
+    padding: 80px 10% 80px 10%;
   }
 
   .section11 img {
@@ -1009,12 +1035,16 @@ body {
   }
 
   .section11 h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-align: center;
   }
 
   .section12 {
     padding: 15% 10% 15% 10%;
+  }
+
+  .section12 h1 {
+    font-size: 2.2rem;
   }
 
   .section12 button {
@@ -1026,6 +1056,10 @@ body {
     gap: 35px;
     align-items: center;
     padding: 15% 10% 6% 10%;
+  }
+
+  .section13 h1 {
+    font-size: 1.4rem;
   }
 
   .section14 {
