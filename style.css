@@ -130,6 +130,11 @@ body {
   content-visibility: auto;
 }
 
+.section2 p {
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+}
+
 .section2__titulo1 {
   color: var(--cor-primaria);
   font-family: var(--fonte-primaria);
